@@ -125,5 +125,5 @@ while True:
             time.sleep(0.2)
         time.sleep(random.uniform(1, 1.3))
     except Exception as e:
-        print(f"錯誤：{e}，0.1秒後重試")
-        time.sleep(0.1)
+        print(f"錯誤：{e}，0.5秒後重試")
+        time.sleep(0.5)
