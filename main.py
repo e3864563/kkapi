@@ -5,7 +5,7 @@ import requests
 import asyncio
 import aiohttp
 
-event_ids = ["302aface","6cd8b40c"]
+event_ids = ["302aface","393789cb"]
 
 headers_template = {
     "Accept": "*/*",
@@ -123,7 +123,7 @@ while True:
                     send_discord(title, event_id, current_sections)
                     last_stock_by_event[event_id] = current_sections
             time.sleep(0.2)
-        time.sleep(random.uniform(1, 1.3))
+        time.sleep(random.uniform(1.5, 2))
     except Exception as e:
         print(f"錯誤：{e}，1秒後重試")
         time.sleep(1)
