@@ -5,7 +5,7 @@ import requests
 import asyncio
 import aiohttp
 
-event_ids = ["302aface","393789cb"]
+event_ids = ["302aface","6cd8b40c"]
 
 headers_template = {
     "Accept": "*/*",
