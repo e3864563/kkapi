@@ -29,7 +29,8 @@ headers_template = {
 }
 
 webhook_urls = [
-    "https://discord.com/api/webhooks/1371436288330436618/_WsfwLwakJLC1vW7g01iZcDzPTiSnxhR4ijRv0gtsxv4Yo27J49Dx8zubkZqb_m-GW00"
+    "https://discord.com/api/webhooks/1371436288330436618/_WsfwLwakJLC1vW7g01iZcDzPTiSnxhR4ijRv0gtsxv4Yo27J49Dx8zubkZqb_m-GW00",
+    "https://discord.com/api/webhooks/1398228480843452518/1K9dmYbJJToq_uzCsj3C5b79XHYmbKo_ZV_gdkW7NwZKwCwd7f69jWBvYHJ0HKQZmYA5"
 ]
 
 scraper = cloudscraper.create_scraper()
@@ -122,7 +123,7 @@ while True:
                 if did_print:
                     send_discord(title, event_id, current_sections)
                     last_stock_by_event[event_id] = current_sections
-            time.sleep(0.2)
+            time.sleep(0.5)
         time.sleep(random.uniform(1.5, 2))
     except Exception as e:
         print(f"錯誤：{e}，1秒後重試")
